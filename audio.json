@@ -1,0 +1,19 @@
+{
+    "schema_version": "1.0",
+    "source_type": "hearth/2.0",
+    "source_id": "R&D Upload Page",
+    "host_id": 161,
+    "host_name": "Guest",
+    "geo": [],
+    "cross_pollination": [],
+    "start_time": "2023-04-20T16:22:50",
+    "end_time": "2023-04-20T16:24:14",
+    "duration": 83,
+    "collection_id": 243,
+    "environment": "production",
+    "language_codes": [
+      "en-US"
+    ],
+    "title": "R&D Upload Test",
+    "num_participants": 2
+  }
