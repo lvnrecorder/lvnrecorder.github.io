@@ -189,10 +189,6 @@ async function sendToLVN(audioblob){
 			const jsonblob = new Blob([bytes], {
 				type: "application/json;charset=utf-8"
 			});
-			// let jsonblob = await Blob([lvnJSON], {type: "application/json"})
-
-			// let prejson = await fetch('http://127.0.0.1:8000/audio.json');
-			// let json = await prejson.blob();
 
 			let tar = new tarball.TarWriter();
 			tar.addFile("20230420-162252.mp3", audioblob);
@@ -202,6 +198,7 @@ async function sendToLVN(audioblob){
 
 			var requestOptions = {
 			method: 'POST',
+			mode: 'no-cors',
 			headers: myHeaders,
 			body: data,
 			redirect: 'follow'
